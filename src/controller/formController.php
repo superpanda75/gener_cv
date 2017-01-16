@@ -1,10 +1,11 @@
 <?php
+@session_start();
 use mikehaertl\wkhtmlto\Pdf;
 
 if (isset($_POST['firstname']))
     {
         $_SESSION = $_POST;
-        include 'cvController.php';
+        include 'cvChoiceController.php';
     }
     else
     {
